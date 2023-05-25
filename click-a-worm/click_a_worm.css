@@ -1,0 +1,48 @@
+/* #hole_1 > *, #hole_2 > *, #hole_3 > *, #hole_4 > *, #hole_5 > *, #hole_6 > *, #hole_7 > *, #hole_8 > *, #hole_9 > *, #hole_10 > *, #hole_11 > *, #hole_12 > *, #hole_13 > *, #hole_14 > *, #hole_15 > *, #hole_16 > * {
+  pointer-events: none;
+} */
+
+html {
+  box-shadow: 0 0 200px 50px #161616 inset;
+  min-height: 100%;
+}
+
+body {
+  text-align: center;
+  margin: 0 auto;
+  background-color: #c0c0c0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+#grass {
+  /* position: relative; */
+  padding: 50px;
+  background-color: #7bb536;
+  border: 20px solid #634a26;
+  /* box-shadow: 20px 20px 30px 10px inset; */
+  box-shadow: 20px 20px 30px 8px #1f1f1f, 10px 10px 30px 8px #1f1f1f inset;
+}
+
+#holes {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-template-rows: repeat(4, 100px);
+  gap: 20px;
+  font-size: 100px;
+  color: #1c160b;
+  text-shadow: 0 2px 2px #1f1f1f;
+}
+
+#bird {
+  position: absolute;
+  left: -150px;
+  bottom: 50px;
+  font-size: 300px;
+  color: #130233;
+  visibility: visible;
+  text-shadow: 0 3px 2px #1f1f1f;
+}
