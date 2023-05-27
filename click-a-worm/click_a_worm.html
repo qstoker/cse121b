@@ -9,16 +9,20 @@
     <link rel="stylesheet" href="click_a_worm.css" />
   </head>
   <body>
+    <div id="start-banner">
+      <span id="start-button">START</span>
+    </div>
     <header>
-      <h2>Click-a-Worm</h2>
+      <h2 id="title"><i>Click-a-Worm</i></h2>
       <h1 id="timer">01 : 00</h1>
-      <p>
-        Click on the worms when they pop out of their holes.<br />You have one minute to click as many as you can<br />Watch out though, the higher your score
-        the faster they move!
-      </p>
+      <div id="desc-and-score-container">
+        <p id="description">Click on the worms to collect as many as you can.<br />Watch out though, there might be hungry birds around!</p>
+        <h2 id="score">0</h2>
+      </div>
     </header>
     <main>
       <div id="grass">
+        <!-- <span id="start-button">START</span> -->
         <div id="holes">
           <span id="hole_0" class="fa-solid fa-circle"></span>
           <span id="hole_1" class="fa-solid fa-circle"></span>
@@ -40,9 +44,6 @@
         <span id="bird" class="fa-solid fa-crow fa-beat"></span>
       </div>
     </main>
-    <footer>
-      <h2 id="score">0</h2>
-    </footer>
     <script src="click_a_worm.js" defer></script>
   </body>
 </html>

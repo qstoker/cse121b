@@ -1,10 +1,7 @@
-/* #hole_1 > *, #hole_2 > *, #hole_3 > *, #hole_4 > *, #hole_5 > *, #hole_6 > *, #hole_7 > *, #hole_8 > *, #hole_9 > *, #hole_10 > *, #hole_11 > *, #hole_12 > *, #hole_13 > *, #hole_14 > *, #hole_15 > *, #hole_16 > * {
-  pointer-events: none;
-} */
-
 html {
-  box-shadow: 0 0 200px 50px #161616 inset;
+  box-shadow: 0 0 200px 40px #161616 inset;
   min-height: 100%;
+  font-family: Arial, sans-serif;
 }
 
 body {
@@ -18,13 +15,97 @@ main {
   justify-content: center;
 }
 
+#title {
+  margin: 0;
+  padding: 20px;
+  font-size: 2em;
+  font-weight: lighter;
+  background-color: #464646;
+  color: #cfcfcf;
+}
+
+#timer {
+  display: inline-block;
+  font-size: 3em;
+  margin: 20px auto 10px auto;
+  padding: 10px;
+  background-color: #634a26;
+  border-radius: 20px;
+  color: #e0da87;
+  text-shadow: 0 2px 5px #1f1f1f;
+  box-shadow: 0 0 2px 1px #1f1f1f;
+}
+
+#desc-and-score-container {
+  display: flex;
+  width: 588px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  align-items: center;
+  background-color: #919191;
+  border: 6px solid #5f5f5f;
+  border-radius: 5px;
+}
+
+#description {
+  text-align: justify;
+  margin-left: 40px;
+  margin-right: 30px;
+}
+
+#score {
+  font-size: 2em;
+  width: 55px;
+  margin: 16px 40px 16px 25px;
+  padding: 5px;
+  background-color: #634a26;
+  border-radius: 15px;
+  color: #e0da87;
+  text-shadow: 0 2px 5px #1f1f1f;
+  box-shadow: 0 0 2px 1px #1f1f1f;
+}
+
 #grass {
-  /* position: relative; */
   padding: 50px;
   background-color: #7bb536;
   border: 20px solid #634a26;
-  /* box-shadow: 20px 20px 30px 10px inset; */
   box-shadow: 20px 20px 30px 8px #1f1f1f, 10px 10px 30px 8px #1f1f1f inset;
+}
+
+#start-banner {
+  position: absolute;
+  top: 50%;
+  margin-top: -40px;
+  border-top: 8px solid #3b4679;
+  border-bottom: 8px solid #3b4679;
+  width: 100%;
+  height: 100px;
+  background-color: #445291;
+  visibility: visible;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 10px 30px 0px #1f1f1f;
+}
+
+#start-button {
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -34px;
+  margin-left: -70px;
+  width: 110px;
+  height: 38px; */
+  /* visibility: visible; */
+  margin: 5px auto;
+  text-align: center;
+  font-size: 2em;
+  padding: 15px;
+  background-color: #aaaaaa;
+  border-radius: 10px;
+}
+
+#start-button:hover {
+  background-color: #e0da87;
 }
 
 #holes {
@@ -39,10 +120,10 @@ main {
 
 #bird {
   position: absolute;
-  left: -150px;
+  left: -200px;
   bottom: 50px;
   font-size: 300px;
   color: #130233;
-  visibility: visible;
+  visibility: hidden;
   text-shadow: 0 3px 2px #1f1f1f;
 }
